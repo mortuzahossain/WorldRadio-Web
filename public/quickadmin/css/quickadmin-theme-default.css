@@ -910,3 +910,6 @@ body {
 .block-spinner-bar > div {
   background: #da594a;
 }
+span.info-box-icon>i {
+  font-size: 40px !important;
+}
