@@ -11,11 +11,13 @@
 |
 */
 
+Route::group([
+    'middleware' => ['web', 'auth']
+], function () {
 
+    Route::get('/admin', 'DashboardController@index');
 
-Route::get('/admin', 'DashboardController@index');
-
-
+});
 
 Route::get('/', function () {
     return view('welcome');
